@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "indimind.in",
+    template: "%s | indimind.in",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "inspire india to innovate",
   openGraph: {
-    title: "chronark.com",
+    title: "indimind.in",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "inspire india to innovate",
+    url: "https://indimind.in",
+    siteName: "indimind.in",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://indimind.in/og.png",
         width: 1920,
         height: 1080,
       },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "Indimind",
     card: "summary_large_image",
   },
   icons: {
