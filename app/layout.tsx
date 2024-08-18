@@ -6,16 +6,16 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "indimind.in",
-    template: "%s | indimind.in",
+    default: "indimind",
+    template: "%s | indimind",
   },
-  description: "inspire india to innovate",
+  description: "an india based consultancy agency, which provides soltion for many fields such as mechanical, interior designing, marketing, web developement and much more.",
   openGraph: {
     title: "indimind.in",
     description:
-      "inspire india to innovate",
+      "an india based consultancy agency, which provides soltion for many fields such as mechanical, interior designing, marketing, web developement and much more.",
     url: "https://indimind.in",
-    siteName: "indimind.in",
+    siteName: "indimind",
     images: [
       {
         url: "https://indimind.in/og.png",
