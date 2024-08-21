@@ -10,7 +10,7 @@ import {
   Globe,
   Settings,
   PenTool,
-  FlaskCanonical,
+  FlaskConical,
   Users,
   ArrowRight
 } from 'lucide-react';
