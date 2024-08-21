@@ -1,8 +1,76 @@
 import React from "react";
 import { Card } from "../components/card";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { Navigation } from "../components/nav";
+import {
+  Wrench,
+  Lightbulb,
+  Megaphone,
+  Layout,
+  Globe,
+  Settings,
+  PenTool,
+  Flask,
+  Users,
+  ArrowRight
+} from 'lucide-react';
+
+// const services = [
+//   {
+//     name: "CAD / CAE Services",
+//     description:
+//       "We specialize in designing and creating custom mechanical components for various industries.",
+//     image: "/images/mechanical-design.jpg",
+//   },
+//   {
+//     name: "New Product Development",
+//     description:
+//       "We help businesses develop innovative products that meet their customers' needs.",
+//     image: "/images/new-product-development.jpg",
+//   },
+//   {
+//     name: "Digital Marketing",
+//     description:
+//       "We help businesses create strong online presence and attract customers.",
+//     image: "/images/marketing-promotion.jpg",
+//   },
+//   {
+//     name: "Interior Design",
+//     description:
+//       "We create visually appealing and functional interior spaces that enhance the overall look and feel of a home.",
+//     image: "/images/interior-design.jpg",
+//   },
+//   {
+//     name: "Web Developement",
+//     description:
+//       "We help businesses create engaging and user-friendly websites that meet their customers' needs.",
+//     image: "/images/web-development.jpg",
+//   },
+//   {
+//     name: "Part Manufaturing",
+//     description:
+//       "We help businesses create and maintain custom parts that meet their customers' needs.",
+//     image: "/images/part-manufacturing.jpg",
+//   },
+//   {
+//     name: "Graphic Designing",
+//     description:
+//       "We help businesses create visually appealing and functional marketing materials that attract customers.",
+//     image: "/images/graphic-designing.jpg",
+//   },
+//   {
+//     name: "R & D Projects",
+//     description:
+//       "We help businesses develop innovative solutions for various industries.",
+//     image: "/images/research-and-development.jpg",
+//   },
+//   {
+//     name: "Talent Acquisition",
+//     description:
+//       "We help businesses acquire and develop talent that meets their customers' needs.",
+//     image: "/images/talent-acquisition.jpg",
+//   },
+// ];
 
 const services = [
   {
@@ -10,54 +78,63 @@ const services = [
     description:
       "We specialize in designing and creating custom mechanical components for various industries.",
     image: "/images/mechanical-design.jpg",
+    icon: <Wrench size={20} />, // Icon for mechanical design services
   },
   {
     name: "New Product Development",
     description:
       "We help businesses develop innovative products that meet their customers' needs.",
     image: "/images/new-product-development.jpg",
+    icon: <Lightbulb size={20} />, // Icon representing innovation and new ideas
   },
   {
     name: "Digital Marketing",
     description:
       "We help businesses create strong online presence and attract customers.",
     image: "/images/marketing-promotion.jpg",
+    icon: <Megaphone size={20} />, // Icon for promotion and marketing
   },
   {
     name: "Interior Design",
     description:
       "We create visually appealing and functional interior spaces that enhance the overall look and feel of a home.",
     image: "/images/interior-design.jpg",
+    icon: <Layout size={20} />, // Icon representing design and layout
   },
   {
-    name: "Web Developement",
+    name: "Web Development",
     description:
       "We help businesses create engaging and user-friendly websites that meet their customers' needs.",
     image: "/images/web-development.jpg",
+    icon: <Globe size={20} />, // Icon representing the web and online presence
   },
   {
-    name: "Part Manufaturing",
+    name: "Part Manufacturing",
     description:
       "We help businesses create and maintain custom parts that meet their customers' needs.",
     image: "/images/part-manufacturing.jpg",
+    icon: <Settings size={20} />, // Icon for settings and mechanical parts
   },
   {
     name: "Graphic Designing",
     description:
       "We help businesses create visually appealing and functional marketing materials that attract customers.",
     image: "/images/graphic-designing.jpg",
+    icon: <PenTool size={20} />, // Icon representing graphic design tools
   },
   {
     name: "R & D Projects",
     description:
       "We help businesses develop innovative solutions for various industries.",
     image: "/images/research-and-development.jpg",
+    icon: <Flask size={20} />, // Icon representing research and development
   },
   {
     name: "Talent Acquisition",
     description:
       "We help businesses acquire and develop talent that meets their customers' needs.",
     image: "/images/talent-acquisition.jpg",
+    icon: <Users size={20} />, // Icon representing people and talent
   },
 ];
 
@@ -79,7 +156,7 @@ const servicesPage = () => {
           <div className="relative">
             <Card key={index}>
               <div className="p-5 text-[#f4f4f5]">
-                <h2 className="font-semibold text-3xl"> {service.name} </h2>
+                <h2 className="font-semibold text-3xl flex items-center gap-5"> {service.icon}  {service.name} </h2>
                 <p className="mt-5 text-zinc-300"> {service.description} </p>
                 <Link
                   className="flex items-center gap-3 mt-5 text-sm text-zinc-400 underline underline-offset-2"
