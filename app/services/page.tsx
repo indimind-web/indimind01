@@ -10,7 +10,7 @@ import {
   Globe,
   Settings,
   PenTool,
-  Flask,
+  FlaskCanonical,
   Users,
   ArrowRight
 } from 'lucide-react';
@@ -127,7 +127,7 @@ const services = [
     description:
       "We help businesses develop innovative solutions for various industries.",
     image: "/images/research-and-development.jpg",
-    icon: <Flask size={20} />, // Icon representing research and development
+    icon: <FlaskCanonical size={20} />, // Icon representing research and development
   },
   {
     name: "Talent Acquisition",
