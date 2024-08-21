@@ -144,7 +144,7 @@ const servicesPage = () => {
 
       <Navigation/>
 
-      <div className="gap-5 grid grid-cols-1 md:grid-cols-2 px-10 md:px-0 w-full max-w-[1200px]">
+      <div className="gap-5 flex flex-col md:grid md:grid-cols-2 px-10 md:px-0 w-full max-w-[1200px]">
         <div className="col-span-2">
           <h2 className="font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight">Services</h2>
           <p className="mt-4 text-zinc-400">
