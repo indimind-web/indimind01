@@ -127,7 +127,7 @@ const services = [
     description:
       "We help businesses develop innovative solutions for various industries.",
     image: "/images/research-and-development.jpg",
-    icon: <FlaskCanonical size={20} />, // Icon representing research and development
+    icon: <FlaskConical size={20} />, // Icon representing research and development
   },
   {
     name: "Talent Acquisition",
