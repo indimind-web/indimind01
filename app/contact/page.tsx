@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, Mail, Twitter, Instagram } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -23,6 +23,12 @@ const socials = [
 	// 	label: "Github",
 	// 	handle: "chronark",
 	// },
+	{
+		icon: <Instagram size={20} />,
+		href:"https://www.instagram.com/indimind.in/",
+		label:"Instagram",
+		handle:"@indimind.in"
+	}
 ];
 
 export default function Example() {
