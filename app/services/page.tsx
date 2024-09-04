@@ -168,7 +168,7 @@ const servicesPage = () => {
                 <p className="mt-5 text-zinc-300"> {service.description} </p>
                 <Link
                   className="flex items-center gap-3 mt-5 text-sm text-zinc-400 underline underline-offset-2"
-                  href={""}
+                  href={"services/"+service.href}
                 >
                   more details <ArrowRight size={15} />{" "}
                 </Link>
