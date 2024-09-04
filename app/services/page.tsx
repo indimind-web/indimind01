@@ -71,7 +71,6 @@ import {
 //     image: "/images/talent-acquisition.jpg",
 //   },
 // ];
-
 const services = [
   {
     name: "CAD / CAE Services",
@@ -79,62 +78,71 @@ const services = [
       "We specialize in designing and creating custom mechanical components for various industries.",
     image: "/images/mechanical-design.jpg",
     icon: <Wrench size={20} />, // Icon for mechanical design services
+    href:"cad"
   },
   {
     name: "New Product Development",
     description:
       "We help businesses develop innovative products that meet their customers' needs.",
     image: "/images/new-product-development.jpg",
-    icon: <Lightbulb size={20} />, // Icon representing innovation and new ideas
+    icon: <Lightbulb size={20} />, // Icon representing innovation and new ideas,
+    href:"npd"
   },
   {
     name: "Digital Marketing",
     description:
       "We help businesses create strong online presence and attract customers.",
     image: "/images/marketing-promotion.jpg",
-    icon: <Megaphone size={20} />, // Icon for promotion and marketing
+    icon: <Megaphone size={20} />, // Icon for promotion and marketing,
+    href:"dm"
   },
   {
     name: "Interior Design",
     description:
       "We create visually appealing and functional interior spaces that enhance the overall look and feel of a home.",
     image: "/images/interior-design.jpg",
-    icon: <Layout size={20} />, // Icon representing design and layout
+    icon: <Layout size={20} />, // Icon representing design and layout,
+    href:"id"
   },
   {
     name: "Web Development",
     description:
       "We help businesses create engaging and user-friendly websites that meet their customers' needs.",
     image: "/images/web-development.jpg",
-    icon: <Globe size={20} />, // Icon representing the web and online presence
+    icon: <Globe size={20} />, // Icon representing the web and online presence,
+    href:"wd"
   },
   {
     name: "Part Manufacturing",
     description:
       "We help businesses create and maintain custom parts that meet their customers' needs.",
     image: "/images/part-manufacturing.jpg",
-    icon: <Settings size={20} />, // Icon for settings and mechanical parts
+    icon: <Settings size={20} />, // Icon for settings and mechanical parts,
+    href:"pm"
   },
   {
     name: "Graphic Designing",
     description:
       "We help businesses create visually appealing and functional marketing materials that attract customers.",
     image: "/images/graphic-designing.jpg",
-    icon: <PenTool size={20} />, // Icon representing graphic design tools
+    icon: <PenTool size={20} />, // Icon representing graphic design tools,
+    href:"gd"
   },
   {
     name: "R & D Projects",
     description:
       "We help businesses develop innovative solutions for various industries.",
     image: "/images/research-and-development.jpg",
-    icon: <FlaskConical size={20} />, // Icon representing research and development
+    icon: <FlaskConical size={20} />, // Icon representing research and development,
+    href:"rd"
   },
   {
     name: "Talent Acquisition",
     description:
       "We help businesses acquire and develop talent that meets their customers' needs.",
     image: "/images/talent-acquisition.jpg",
-    icon: <Users size={20} />, // Icon representing people and talent
+    icon: <Users size={20} />, // Icon representing people and talent,
+    href:"ta"
   },
 ];
 
