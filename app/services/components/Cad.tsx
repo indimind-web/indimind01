@@ -36,6 +36,159 @@ const images = {
     '2.jpeg',
   ]
 }
+export const metadata:Metadata ={
+  title: 'Indimind - Innovative 3D Design Solutions',
+  description: 'Indimind is a leading global provider of innovative 3D design solutions, offering expertise in CAD, 3D modeling, and fabrication.',
+  publisher:"sanket patel",
+  keywords:[
+    'indimind',
+    '3d design',
+    'cad',
+    '3d modeling',
+    'fabrication',
+   'sheet metal',
+    'surface modeling',
+    'fabricated structure',
+    'indimind services',
+    '3d printing',
+    'virtual reality',
+    'augmented reality',
+    'indimind website development',
+    '3d printing services',
+    'virtual reality services',
+    'augmented reality services',
+    'indimind website design',
+    'indimind consultancy',
+    '3d printing consultancy',
+    'virtual reality consultancy',
+    'augmented reality consultancy',
+    'indimind website design consultancy',
+    'indimind marketing',
+    '3d printing marketing',
+    'virtual reality marketing',
+    'augmented reality marketing',
+    'indimind website design marketing',
+    'indimind consultancy marketing',
+    'indimind marketing consultancy',
+    'indimind website design marketing consultancy',
+    'indimind part manufacturing',
+    '3d printing part manufacturing',
+    'virtual reality part manufacturing',
+    'indimind website design part manufacturing',
+    'indimind consultancy part manufacturing',
+    'indimind marketing part manufacturing',
+    'indimind website design marketing part manufacturing',
+    'indimind part manufacturing consultancy',
+  ],
+  category:"cad",
+  openGraph: {
+    title: 'Indimind - CAD/CAE Services',
+    description: 'Indimind is a leading global provider of innovative 3D design solutions, offering expertise in CAD, 3D modeling, and fabrication.',
+    url: 'https://indimind.in/services/cad',
+    siteName: 'indimind',
+    images: [
+      {
+        url: 'https://indimind.in/images/cad/fabricatedStructure/1.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/fabricatedStructure/2.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/multipart/1.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/multipart/2.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/multipart/3.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/multipart/4.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/multipart/5.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/multipart/6.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/multipart/7.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/multipart/8.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/multipart/9.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/multipart/10.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/multipart/11.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/multipart/12.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/sheetMetal/1.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/sheetMetal/2.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/sheetMetal/3.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+      {
+        url: 'https://indimind.in/images/cad/sheetMetal/4.jpeg',
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    locale: 'en-US',
+    type: 'website',
+    emails:"indimindservices@gmail.com"
+  },
+  robots:{
+    follow:true,
+    index:true,
+  },
+  
+
+}
 
 const cad = () => {
   return (
