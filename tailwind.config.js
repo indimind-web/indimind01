@@ -41,6 +41,9 @@ module.exports = {
 				title: "title 3s ease-out forwards",
 				"fade-left": "fade-left 3s ease-in-out forwards",
 				"fade-right": "fade-right 3s ease-in-out forwards",
+				spin_right: 'spin_right 5s ease infinite',
+				spin_right_fast: 'spin_right 2s linear infinite',
+				spin_left: 'spin_left 3s linear infinite'
 			},
 			keyframes: {
 				"fade-in": {
@@ -82,6 +85,16 @@ module.exports = {
 						opacity: "0%",
 					},
 				},
+				spin_right: {
+					'0%': { transform: 'rotate(0deg)' },
+					'50%': { transform: 'rotate(180deg)' },
+					'100%': { transform: 'rotate(360deg)' },
+				  },
+				  spin_left: {
+					'0%': { transform: 'rotate(0deg)' },
+					'50%': { transform: 'rotate(-180deg)' },
+					'100%': { transform: 'rotate(-360deg)' },
+				  },
 				title: {
 					"0%": {
 						"line-height": "0%",

@@ -3,7 +3,7 @@ import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
-
+import Popup from "./components/popup"
 export const metadata: Metadata = {
   title: {
     default: "indimind",
@@ -70,6 +70,7 @@ export default function RootLayout({
         className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
       >
+                <Popup/>
         {children}
       </body>
     </html>
