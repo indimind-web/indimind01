@@ -1,6 +1,7 @@
 import { Navigation } from '@/app/components/nav'
 import Image from 'next/image'
 import React from 'react'
+import { Metadata } from 'next'
 
 const images = {
   multipart:[
