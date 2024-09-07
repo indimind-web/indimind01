@@ -13,7 +13,7 @@ const Popup: React.FC = () => {
     // Automatically hide the popup after 10 seconds
     const autoCloseTimer = setTimeout(() => {
       setVisible(false);
-    }, 10000);
+    }, 80000);
 
     return () => {
       clearTimeout(timer);
