@@ -99,7 +99,7 @@ const Id: React.FC = () => {
           <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight'>
             CAD • Interior Design
           </h1>
-          <div className='gap-5 grid grid-cols-3 mt-10'>
+          <div className='gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10'>
             {images.interiorDesigning.map((image) => ( 
               <Image
                 key={image}
