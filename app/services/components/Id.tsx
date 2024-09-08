@@ -94,7 +94,7 @@ const Id: React.FC = () => {
   return (
     <>
       <Navigation />
-      <div className='relative flex flex-col justify-start items-start bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900 lg:px-32 py-32 w-full h-full min-h-screen'>
+      <div className='relative flex flex-col justify-start items-start bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900 lg:px-32 py-32 w-full h-full min-h-screen px-10'>
         <div>
           <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight'>
             CAD • Interior Design
