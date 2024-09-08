@@ -9,10 +9,11 @@ const navigation = [
 ];
 
 export const metadata: Metadata = {
-  title: {
-    default: "indimind",
+  // title: {
+    // default: "indimind",
     // // // template: "%s | indimind",
-  },
+  // },
+  title:"indimind",
   description: "Indimind is an india based consultancy agency, which provides soltion for many fields such as mechanical, interior designing, marketing, web developement, graphic designing, 'digital marketing and much more......",
   keywords: ['indimind', 'web development service', 'consultancy services', 'best consultancy', 'part manufacturing service', 'graphic design service', 'digital marketing service','indimind services','next.js website development','react website'],
   openGraph: {
