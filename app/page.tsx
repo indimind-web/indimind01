@@ -1,12 +1,55 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
-
+import { Metadata } from "next";
 const navigation = [
   //{ name: "Projects", href: "/projects" },
   {name:"Services", href:"/services"},
   { name: "Contact", href: "/contact" },
 ];
+
+export const metadata: Metadata = {
+  title: {
+    default: "indimind",
+    // // // template: "%s | indimind",
+  },
+  description: "Indimind is an india based consultancy agency, which provides soltion for many fields such as mechanical, interior designing, marketing, web developement, graphic designing, 'digital marketing and much more......",
+  keywords: ['indimind', 'web development service', 'consultancy services', 'best consultancy', 'part manufacturing service', 'graphic design service', 'digital marketing service','indimind services','next.js website development','react website'],
+  openGraph: {
+    title: "indimind.in",
+    description:
+      "an india based consultancy agency, which provides soltion for many fields such as mechanical, interior designing, marketing, web developement and much more.",
+    url: "https://indimind.in",
+    siteName: "indimind",
+    images: [
+      {
+        url: "https://indimind.in/og.png",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: "Indimind",
+    card: "summary_large_image",
+  },
+  icons: {
+    shortcut: "/favicon.png",
+  },
+};
 
 export default function Home() {
   return (
