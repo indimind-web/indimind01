@@ -26,6 +26,7 @@ const images = {
     '/images/interior/19.png',
   ],
 }
+
 export const metadata:Metadata ={
   title: 'Indimind - Interior Design',
   description: 'Indimind is a leading Indian company specializing interior design. Our team of professionals brings a unique blend of creativity, expertise, and dedication to delivering high-quality products.',
@@ -77,16 +78,8 @@ export const metadata:Metadata ={
   robots:{
     follow:true,
     index:true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   }
 }
-
 
 
 const Id: React.FC = () => {
@@ -94,15 +87,15 @@ const Id: React.FC = () => {
   return (
     <>
       <Navigation />
-      <div className='relative flex flex-col justify-start items-start bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900 lg:px-32 py-32 w-full h-full min-h-screen px-10'>
+      <div className='relative flex flex-col justify-start items-start bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900 lg:px-32 py-32 w-full h-full min-h-screen'>
         <div>
           <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight'>
-            CAD • Interior Design
+            Interior Design
           </h1>
-          <div className='gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10'>
-            {images.interiorDesigning.map((image) => ( 
+          <div className='gap-5 grid grid-cols-3 mt-10'>
+            {images.interiorDesigning.map((image,index) => ( 
               <Image
-                key={image}
+                key={index}
                 height={1000}
                 width={1000}
                 src={image}

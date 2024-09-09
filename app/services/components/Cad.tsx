@@ -1,7 +1,7 @@
 import { Navigation } from '@/app/components/nav'
+import { Metadata } from 'next'
 import Image from 'next/image'
 import React from 'react'
-import { Metadata } from 'next'
 
 const images = {
   multipart:[
@@ -37,6 +37,8 @@ const images = {
     '2.jpeg',
   ]
 }
+
+
 export const metadata:Metadata ={
   title: 'Indimind - Innovative 3D Design Solutions',
   description: 'Indimind is a leading global provider of innovative 3D design solutions, offering expertise in CAD, 3D modeling, and fabrication.',
@@ -89,92 +91,92 @@ export const metadata:Metadata ={
     siteName: 'indimind',
     images: [
       {
-        url: 'https://indimind.in/images/cad/fabricatedStructure/1.jpeg',
+        url: 'https://indimind.in/images/fabricatedStructure/1.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/fabricatedStructure/2.jpeg',
+        url: 'https://indimind.in/images/fabricatedStructure/2.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/multipart/1.jpeg',
+        url: 'https://indimind.in/images/multipart/1.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/multipart/2.jpeg',
+        url: 'https://indimind.in/images/multipart/2.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/multipart/3.jpeg',
+        url: 'https://indimind.in/images/multipart/3.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/multipart/4.jpeg',
+        url: 'https://indimind.in/images/multipart/4.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/multipart/5.jpeg',
+        url: 'https://indimind.in/images/multipart/5.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/multipart/6.jpeg',
+        url: 'https://indimind.in/images/multipart/6.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/multipart/7.jpeg',
+        url: 'https://indimind.in/images/multipart/7.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/multipart/8.jpeg',
+        url: 'https://indimind.in/images/multipart/8.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/multipart/9.jpeg',
+        url: 'https://indimind.in/images/multipart/9.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/multipart/10.jpeg',
+        url: 'https://indimind.in/images/multipart/10.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/multipart/11.jpeg',
+        url: 'https://indimind.in/images/multipart/11.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/multipart/12.jpeg',
+        url: 'https://indimind.in/images/multipart/12.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/sheetMetal/1.jpeg',
+        url: 'https://indimind.in/images/sheetMetal/1.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/sheetMetal/2.jpeg',
+        url: 'https://indimind.in/images/sheetMetal/2.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/sheetMetal/3.jpeg',
+        url: 'https://indimind.in/images/sheetMetal/3.jpeg',
         width: 1920,
         height: 1080,
       },
       {
-        url: 'https://indimind.in/images/cad/sheetMetal/4.jpeg',
+        url: 'https://indimind.in/images/sheetMetal/4.jpeg',
         width: 1920,
         height: 1080,
       },
@@ -186,13 +188,6 @@ export const metadata:Metadata ={
   robots:{
     follow:true,
     index:true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
   
 
@@ -202,44 +197,44 @@ const cad = () => {
   return (
     <>
     <Navigation/>
-    <div className='relative flex flex-col justify-start items-start bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900 lg:px-32 py-32 w-full h-full min-h-screen px-10'>
+    <div className='relative flex flex-col justify-start items-start bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900 lg:px-32 py-32 w-full h-full min-h-screen'>
        <div>
        <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight"'>CAD • 3D Assembly Modeling</h1>
-              <div className='gap-5 grid md:grid-cols-3 grid-cols-1 mt-10'>
-          {images.multipart.map((image) => (
-            <Image className='rounded-md w-full h-full grayscale hover:grayscale-0 object-cover' src={"/images/cad/multipart/"+image} height={1000} width={1000} alt='' />
+              <div className='gap-5 grid grid-cols-3 mt-10'>
+          {images.multipart.map((image,index) => (
+            <Image key={index} className='rounded-md w-full h-full grayscale hover:grayscale-0 object-cover' src={"/images/cad/multipart/"+image} height={1000} width={1000} alt='' />
           ))}
         </div>
        </div>
        <div className='mt-20'>
        <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight"'>CAD • 3D Part Modeling</h1>
-              <div className='gap-5 grid md:grid-cols-3 grid-cols-1 mt-10'>
-          {images.singleComponent.map((image) => (
-            <Image className='rounded-md w-full h-full grayscale object-cover hover:grayscale-0' src={"/images/cad/singleComponent/"+image} height={1000} width={1000} alt='' />
+              <div className='gap-5 grid grid-cols-3 mt-10'>
+          {images.singleComponent.map((image,index) => (
+            <Image key={index} className='rounded-md w-full h-full grayscale object-cover hover:grayscale-0' src={"/images/cad/singleComponent/"+image} height={1000} width={1000} alt='' />
           ))}
         </div>
        </div>
        <div className='mt-20'>
        <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight"'>CAD • 3D Surface Modeling</h1>
-              <div className='gap-5 grid md:grid-cols-3 grid-cols-1 mt-10'>
-          {images.surfaceModeling.map((image) => (
-            <Image className='rounded-md w-full h-full grayscale object-cover hover:grayscale-0' src={"/images/cad/surfaceModeling/"+image} height={1000} width={1000} alt='' />
+              <div className='gap-5 grid grid-cols-3 mt-10'>
+          {images.surfaceModeling.map((image,index) => (
+            <Image key={index} className='rounded-md w-full h-full grayscale object-cover hover:grayscale-0' src={"/images/cad/surfaceModeling/"+image} height={1000} width={1000} alt='' />
           ))}
         </div>
        </div>
        <div className='mt-20'>
        <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight"'>CAD • Sheet Metal Modeling</h1>
-              <div className='gap-5 grid md:grid-cols-3 grid-cols-1 mt-10'>
-          {images.sheetMetal.map((image) => (
-            <Image className='rounded-md w-full h-full grayscale object-cover hover:grayscale-0' src={"/images/cad/sheetMetal/"+image} height={1000} width={1000} alt='' />
+              <div className='gap-5 grid grid-cols-3 mt-10'>
+          {images.sheetMetal.map((image,index) => (
+            <Image key={index} className='rounded-md w-full h-full grayscale object-cover hover:grayscale-0' src={"/images/cad/sheetMetal/"+image} height={1000} width={1000} alt='' />
           ))}
         </div>
        </div>
        <div className='mt-20'>
        <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight"'>CAD • Fabricated Structure Modeling</h1>
-              <div className='gap-5 grid md:grid-cols-3 grid-cols-1 mt-10'>
-          {images.fabricatedStructure.map((image) => (
-            <Image className='rounded-md w-full h-full grayscale object-cover hover:grayscale-0' src={"/images/cad/fabricatedStructure/"+image} height={1000} width={1000} alt='' />
+              <div className='gap-5 grid grid-cols-3 mt-10'>
+          {images.fabricatedStructure.map((image,index) => (
+            <Image key={index} className='rounded-md w-full h-full grayscale object-cover hover:grayscale-0' src={"/images/cad/fabricatedStructure/"+image} height={1000} width={1000} alt='' />
           ))}
         </div>
        </div>

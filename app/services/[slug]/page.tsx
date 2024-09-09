@@ -1,16 +1,15 @@
 import React from 'react'
 import {services} from "@/util/services"
-import Cad from '../components/Cad'
+import Cad, { metadata as cadMetadata } from '../components/Cad'
 import Npd from '../components/Npd'
 import Id, { metadata as idMetadata} from '../components/Id'
 import Gd from '../components/Gd'
 import Ta from '../components/Ta'
 import Rd from '../components/Rd'
 import Pm from '../components/Pm'
-import Wd from '../components/Wd'
+import Wd , {metadata as wdMetadata} from '../components/Wd'
 import Dm from '../components/Dm'
-import { Metadata, ResolvingMetadata } from 'next'
-import { metadata as cadMetadata } from '../components/Cad'
+import { Metadata } from 'next'
 type Props = {
     params:{
         slug: string
@@ -52,9 +51,7 @@ export async function generateMetadata(
     }
   }
   if(slug == "wd"){
-    return {
-      title:"indimind - web development service"
-    }
+    return wdMetadata
   }
   if(slug == "dm"){
     return {
