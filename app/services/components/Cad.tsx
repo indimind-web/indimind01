@@ -200,7 +200,7 @@ const cad = () => {
     <div className='relative flex flex-col justify-start items-start bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900 lg:px-32 py-32 w-full h-full min-h-screen'>
        <div>
        <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight"'>CAD • 3D Assembly Modeling</h1>
-              <div className='gap-5 grid grid-cols-3 mt-10'>
+              <div className='gap-5 grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3'>
           {images.multipart.map((image,index) => (
             <Image key={index} className='rounded-md w-full h-full grayscale hover:grayscale-0 object-cover' src={"/images/cad/multipart/"+image} height={1000} width={1000} alt='' />
           ))}
@@ -208,7 +208,7 @@ const cad = () => {
        </div>
        <div className='mt-20'>
        <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight"'>CAD • 3D Part Modeling</h1>
-              <div className='gap-5 grid grid-cols-3 mt-10'>
+              <div className='gap-5 grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3'>
           {images.singleComponent.map((image,index) => (
             <Image key={index} className='rounded-md w-full h-full grayscale object-cover hover:grayscale-0' src={"/images/cad/singleComponent/"+image} height={1000} width={1000} alt='' />
           ))}
@@ -216,7 +216,7 @@ const cad = () => {
        </div>
        <div className='mt-20'>
        <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight"'>CAD • 3D Surface Modeling</h1>
-              <div className='gap-5 grid grid-cols-3 mt-10'>
+              <div className='gap-5 grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3'>
           {images.surfaceModeling.map((image,index) => (
             <Image key={index} className='rounded-md w-full h-full grayscale object-cover hover:grayscale-0' src={"/images/cad/surfaceModeling/"+image} height={1000} width={1000} alt='' />
           ))}
@@ -224,7 +224,7 @@ const cad = () => {
        </div>
        <div className='mt-20'>
        <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight"'>CAD • Sheet Metal Modeling</h1>
-              <div className='gap-5 grid grid-cols-3 mt-10'>
+              <div className='gap-5 grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3'>
           {images.sheetMetal.map((image,index) => (
             <Image key={index} className='rounded-md w-full h-full grayscale object-cover hover:grayscale-0' src={"/images/cad/sheetMetal/"+image} height={1000} width={1000} alt='' />
           ))}
@@ -232,7 +232,7 @@ const cad = () => {
        </div>
        <div className='mt-20'>
        <h1 className='font-bold text-3xl text-zinc-100 sm:text-4xl tracking-tight"'>CAD • Fabricated Structure Modeling</h1>
-              <div className='gap-5 grid grid-cols-3 mt-10'>
+              <div className='gap-5 grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3'>
           {images.fabricatedStructure.map((image,index) => (
             <Image key={index} className='rounded-md w-full h-full grayscale object-cover hover:grayscale-0' src={"/images/cad/fabricatedStructure/"+image} height={1000} width={1000} alt='' />
           ))}
