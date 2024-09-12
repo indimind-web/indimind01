@@ -65,8 +65,8 @@ export const metadata:Metadata ={
     images: [
       {
         url: 'https://indimind.in/images/interior/1.png',
-        width: 300,
-        height: 200,
+        width: 1920,
+        height: 1080,
       },
     ],
     siteName:"indimind services",
