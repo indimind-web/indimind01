@@ -105,7 +105,7 @@ const Wd = () => {
                 width={1000}
                 src={image.src}
                 alt='Interior Design Image'
-                className='rounded-md w-full h-full object-cover'
+                className='rounded-md w-full h-full object-cover bg-white'
               />
              </Link>
             ))} 
