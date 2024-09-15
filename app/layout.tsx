@@ -70,7 +70,6 @@ export default function RootLayout({
         className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
       >
-                <Popup/>
         {children}
       </body>
     </html>
