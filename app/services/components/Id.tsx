@@ -64,9 +64,9 @@ export const metadata:Metadata ={
     description: 'Indimind is a leading Indian company specializing interior design. Our team of professionals brings a unique blend of creativity, expertise, and dedication to delivering high-quality products.',
     images: [
       {
-        url: 'https://indimind.in/images/interior/1.png',
-        width: 1920,
-        height: 1080,
+        url: 'https://indimind.in/images/interior/8.jpg',
+        width: 300,
+        height: 200,
       },
     ],
     siteName:"indimind services",

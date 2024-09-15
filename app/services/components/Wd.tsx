@@ -14,6 +14,10 @@ const images = {
     {
       src:"/images/webdevelopment/2.gif",
       href:"https://applevisiondev.netlify.app/"
+    },
+    {
+      src:"/images/webdevelopment/3.png",
+      href:"https://animator-dev.framer.website/"
     }
   ],
 }
@@ -64,7 +68,7 @@ export const metadata:Metadata ={
     description: 'Indimind is a leading Indian company specializing web development. Our team of professionals brings a unique blend of creativity, expertise, and dedication to delivering high-quality products.',
     images: [
       {
-        url: 'https://indimind.in/images/webdevelopment/1.gif',
+        url: 'https://indimind.in/images/webdevelopment/3.png',
         width: 300,
         height: 200,
       },
