@@ -4,6 +4,7 @@ import LocalFont from "@next/font/local";
 // import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 import Popup from "./components/popup"
+import {GoogleTagManager} from "@next/third-parties/google"
 // export const metadata: Metadata = {
 //   title: {
 //     default: "indimind",
@@ -66,6 +67,7 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
+      <GoogleTagManager gtmId="GTM-TJVN6B4G" />
       <body
         className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
