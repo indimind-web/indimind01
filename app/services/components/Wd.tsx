@@ -22,7 +22,51 @@ const images = {
     {
       src:"/images/webdevelopment/4.png",
       href:"https://acurelifescience.com/"
-    }
+    },
+    {
+      src:"/images/webdevelopment/5.png",
+      href:"https://www.traderjoes.com/"
+    },
+    {
+      src:"/images/webdevelopment/6.png",
+      href:"https://www.discountsurgical.com/"
+    },    
+    {
+      src:"/images/webdevelopment/7.png",
+      href:"https://www.whiz-q.com/"
+    },    
+    {
+      src:"/images/webdevelopment/8.png",
+      href:"https://www.stickergiant.com/"
+    },    
+    {
+      src:"/images/webdevelopment/9.png",
+      href:"https://jawhara.online/"
+    },
+    {
+      src:"/images/webdevelopment/10.png",
+      href:"https://www.lionsden.com/"
+    },
+    {
+      src:"/images/webdevelopment/11.png",
+      href:"https://www.nahdionline.com/en/"
+    },
+    {
+      src:"/images/webdevelopment/12.png",
+      href:"https://harakh.com/"
+    },
+    {
+      src:"/images/webdevelopment/13.png",
+      href:"https://www.outdoorcap.com/"
+    },
+    {
+      src:"/images/webdevelopment/14.png",
+      href:"https://fabhabitat.com/"
+    },
+    {
+      src:"/images/webdevelopment/15.png",
+      href:"https://med.equipment/"
+    },
   ],
 }
 
