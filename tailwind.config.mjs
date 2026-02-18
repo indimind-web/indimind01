@@ -1,7 +1,9 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+import defaultTheme from "tailwindcss/defaultTheme";
+import typography from "@tailwindcss/typography";
+import debugScreens from "tailwindcss-debug-screens";
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
 	content: [
 		"./app/**/*.{js,ts,jsx,tsx}",
 		"./mdx-components.tsx",
@@ -89,12 +91,12 @@ module.exports = {
 					'0%': { transform: 'rotate(0deg)' },
 					'50%': { transform: 'rotate(180deg)' },
 					'100%': { transform: 'rotate(360deg)' },
-				  },
-				  spin_left: {
+				},
+				spin_left: {
 					'0%': { transform: 'rotate(0deg)' },
 					'50%': { transform: 'rotate(-180deg)' },
 					'100%': { transform: 'rotate(-360deg)' },
-				  },
+				},
 				title: {
 					"0%": {
 						"line-height": "0%",
