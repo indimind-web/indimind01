@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Twitter, Instagram } from "lucide-react";
+import { Github, Mail, Twitter, Instagram, PhoneCall } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -25,9 +25,21 @@ const socials = [
 	// },
 	{
 		icon: <Instagram size={20} />,
-		href:"https://www.instagram.com/indimind.in/",
-		label:"Instagram",
-		handle:"@indimind.in"
+		href: "https://www.instagram.com/indimind.in/",
+		label: "Instagram",
+		handle: "@indimind.in"
+	},
+	{
+		icon: <PhoneCall size={20} />,
+		href: "tel:+919106028415",
+		label: "Sanket Patel",
+		handle: "+919106028415"
+	},
+	{
+		icon: <PhoneCall size={20} />,
+		href: "tel:+918733875559",
+		label: "Dixit Patel",
+		handle: "+918733875559"
 	}
 ];
 
